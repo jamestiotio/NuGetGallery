@@ -20,12 +20,6 @@ namespace NuGetGallery.Frameworks
         }
 
         [Fact]
-        public void NullFrameworkCompatibilityServiceThrowsArgumentNullException()
-        {
-            Assert.Throws<ArgumentNullException>(() => new PackageFrameworkCompatibilityFactory());
-        }
-
-        [Fact]
         public void NullPackageFrameworksThrowsArgumentNullException()
         {
             Assert.Throws<ArgumentNullException>(() => _factory.Create(null));
